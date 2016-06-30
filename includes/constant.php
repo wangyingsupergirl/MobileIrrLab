@@ -1,0 +1,56 @@
+<?php
+define('ADMIN_ROLE',0);
+define('CONTRACTOR_ROLE',1);
+define('EMPLOYEE_ROLE',2);
+define('PARTNER_ROLE',3);
+define('GUEST_ROLE',4);
+define('FDACS',0);
+define('FED',1);
+define('EVALUATION_TAB',1);
+define('REPORT_TAB',2);
+define('CONTRACT_TAB',3);
+define('LAB_TAB',4);
+define('MEMBERMENAGEMENT_TAB',5);
+define('CONTRACTOR_TAB',6);
+define('REPORT11A','11a');
+define('REPORT11B','11b');
+define('REPORT11C','11c');
+define('REPORT7','7');
+define('REPORT8','8');
+define('REPORT9','9');
+define('REPORT1A','1a');
+define('REPORT2','2');
+define('REPORT3','3');
+define('REPORT4B','4b');
+define('REPORT6A','6a');
+define('REPORT6B','6b');
+define('REPORT6C','6c');
+define('REPORT6D','6d');
+define('REPORT12A','12a');
+define('REPORT12B','12b');
+define('REPORT12C','12c');
+define('REPORT12D','12d');
+define('REPORT13A','13a');
+define('REPORT13B','13b');
+define('REPORT13C','13c');
+define('REPORT13D','13d');
+define('REPORT14A','14a');
+define('REPORT14B','14b');
+define('REPORT14C','14c');
+define('REPORT14D','14d');
+define('BEGINNING_OF_CALENDAR_YEAR_OF_EVALUATION',2000);
+define('BEGINNING_OF_CALENDAR_YEAR_OF_EVALUATION_FROM_1990', 1990);
+date_default_timezone_set('America/New_York');
+$end_year = date("Y") + 1;
+define('END_OF_CALENDAR_YEAR_OF_EVALUATION',$end_year);
+define('REPLACEMENT_EVALUATION', 3);
+define('FOLLOW_UP_EVALUATION', 2);
+define('INITIAL_EVALUATION',1);
+define('AWS_INCREASED', 1);
+define('AWS_DECREASED', 2);
+define('AWS_EQUALS_TO_PWS',0);
+if($_SERVER['SERVER_NAME'] == 'fdacsmilims.fawn.ifas.ufl.edu'){
+    define('ADMIN_EMAIL','camilo.gaitan@freshfromflorida.com');
+}else{
+    define('ADMIN_EMAIL','fanjie@ufl.edu');
+}

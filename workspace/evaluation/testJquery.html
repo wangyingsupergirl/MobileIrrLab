@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Test insert after</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+
+</head>
+
+<body>
+<table>
+<tr class="inner"><td>row 1</td></tr>
+<tr class="inner"><td>row 2</td></tr>
+<tr><td><input type="button" onclick="A()" value="add"></td></tr>
+</table>
+</body>
+<script>
+function A(){
+$('<tr class="inner"><td>Test</td></tr>').insertAfter($(".inner").last());
+}
+</script>
+</html>

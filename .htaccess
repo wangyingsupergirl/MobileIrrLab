@@ -1,0 +1,11 @@
+DirectoryIndex login.php
+# Turn on Expires and set default to 0
+#ExpiresActive On
+#ExpiresDefault A0
+
+# Set up caching on media files for 1 year (forever?)
+#<FilesMatch "\.(css|js)$">
+#ExpiresDefault A29030400
+#Header append Cache-Control "public"
+#</FilesMatch>
+
